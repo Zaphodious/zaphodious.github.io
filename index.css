@@ -43,6 +43,12 @@ main {
     /* padding-top: 35vh; */
 }
 
+main ul li {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 a {
     color: lightgrey;
 }

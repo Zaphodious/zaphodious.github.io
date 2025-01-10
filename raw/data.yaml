@@ -1,0 +1,86 @@
+---
+profile:
+  name: Alex Chythlook
+  tagline: Front-End, Gameplay, Graphics, Tooling  
+  education: 
+    - year: 2024
+      level: B.S.
+      major: Information Technology - Gaming Design
+      from: Liberty University
+      honors: Summa Cum Laude
+  description: Alex is a multi-disciplinary developer who specializes in using code to solve process and operational problem. He has experience working on websites, applications, embedded systems, games, and as a sysadmin administering a variety of systems. 
+socials:
+  - kind: Bluesky 
+    text: '@hot.fish'
+    link: https://bsky.app/profile/hot.fish
+projects:
+  - name: PaperCuts
+    type:
+      - Application
+      - Tool
+    github: https://github.com/Zaphodious/PaperCuts
+    link-text: Github Repository
+    description: A desktop drawing application simulating cutting and layering pieces of paper. Created to create assets for a now-canceled game utalizing custom shaders to achieve a novel "cut paper" aesthetic.
+    img: icon_256.png
+    img-caption: A screenshot of the PaperCuts application on Windows
+    img-alt: A screenshot of a drawing application, showing a roughly-drawn spaceship displayed as though it was made of layers of cut paper
+    technologies: 
+    - Godot
+    - Custom Shaders
+  - name: Proompt
+    type:
+      - Utility
+      - Tool
+    github: https://github.com/Zaphodious/proompt
+    link-text: Github Repository
+    description: Alex's personal terminal prompt theme. Written in Rust and designed to be used via invocation instead of via daemon. Allows for a complex theme for Bash that would be impossible in shell script. Has special support for git repositories, and can show branch and commit information.
+    img: icon_256.png
+    img-caption: The "trains" theme in the Alacritty terminal on Linux
+    img-alt: insert description of what is being displayed
+    technologies: 
+    - Rust
+    - Git CLI
+    - Shell Scripting
+  - name: Hireling
+    type:
+      - Framework
+    github: https://github.com/Zaphodious/hireling
+    link-text: Github Repository
+    description: Unit-testing framework for testing service workers, in Clojurescript. Enabled the used of TDD while developing a service worker, as existing unit testing technologies of the time were not able to sufficiently test inside web workers.
+    img: icon_256.png
+    img-caption: The testing results page, displayed in browser
+    img-alt: insert description of what is being displayed
+    technologies: 
+    - Clojurescript
+    - Service Workers
+    - Unit Testing
+  - name: WFCText
+    type:
+      - Javascript Library
+      - Tech Demo
+    github: https://github.com/Zaphodious/wfctext
+    link: https://zaphodious.com/wfctext/
+    link-text: Demo
+    description: Implimentation of the "Wave-Function Collapse" procedural generation algorithem, including the ability to derive tiles from an example, for pure text inputs. The demo page generates an entirely new map on each reload.
+    img: icon_256.png
+    img-caption: The demo page, after generating maps
+    img-alt: insert description of what is being displayed
+    technologies: 
+    - Javascript
+    - Wave-Function Collapse algorithem
+  - name: Experimental Text RPG
+    type:
+      - Website
+      - Tech Demo
+    github: https://github.com/Zaphodious/textrpg
+    link: https://zaphodious.com/textrpg/
+    link-text: Play Online
+    description: An experiment in telling an interactive story via text, using a very limited set of inputs. 
+    img: icon_256.png
+    img-caption: The demo page, after generating maps
+    img-alt: insert description of what is being displayed
+    technologies: 
+    - Javascript
+    - Wave-Function Collapse algorithem
+
+

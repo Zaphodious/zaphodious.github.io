@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="./icon.svg">
+    <link rel="alternate icon" href="./icon_32.png">
+    <link rel="mask-icon" href="./icon.svg" color="#ff8a01">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Alex Chythlook - Zaphodious</title>
+</head>
+
+<body>
+
+    <header>
+        <hgroup>
+            <h1>{{profile.name}}</h1>
+            <h2>{{profile.tagline}}</h2>
+        </hgroup>
+    </header>
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>{{profile.description}}</p>
+            <h3>Education</h3>
+            {{#profile.education}}
+                <p>{{level}} in {{major}} from {{from}} in {{year}}. Graduated {{honors}}</p>
+            {{/profile.education}}
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                {{#projects}}
+                    <li>
+                        <section>
+                            <h3>{{name}}</h3>
+                            <figure>
+                            <img src="{{img}}" alt="{{img-alt}}" title="{{img-caption}}"/>
+                            <figcaption>{{img-caption}}</figcaption>
+                            </figure>
+                            {{#github}}
+                                <a href="{{github}}">Github</a>
+                            {{/github}}
+                            {{#link}}
+                                <a href="{{link}}">{{link-text}}</a>
+                            {{/link}}
+                            <p>{{description}}</p>
+                            <h4>Technologies Used</h4>
+                            <ul>
+                            {{#technologies}}
+                                <li>{{.}}</li>
+                            {{/technologies}}
+                            </ul>
+                        </section>
+                    </li>
+                {{/projects}}
+            </ul>
+        </section>
+    </main>
+    <aside>
+        <h2>Social Media</h2>
+        <ul>
+            <li>Bluesky</li>
+            <li>LinkedIn</li>
+        </ul>
+    </aside>
+    <footer>
+        <ul>
+            <li>
+                <a href="mailto:zaph@zaphodious.com">Email Alex</a>
+            </li>
+        </ul>
+        <p>
+            This website <em>does not</em> use cookies to track anything
+        </p>
+    </footer>
+
+    <script src="index.js" type="module">
+
+    </script>
+</body>
+
+</html>

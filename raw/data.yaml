@@ -9,12 +9,30 @@ profile:
       from: Liberty University
       honors: Summa Cum Laude
   description: Alex is a multi-disciplinary developer who specializes in using code to solve process and operational problem. He has experience working on websites, applications, embedded systems, games, and as a sysadmin administering a variety of systems. 
+  ai-statement: Alex stays up to date with the state of the art in generative AI and machine learning. However, due to strong ethical concerns, none of his projects involve the use of generative AI at this time. 
 socials:
   - kind: Bluesky 
     text: '@hot.fish'
     link: https://bsky.app/profile/hot.fish
 projects:
+  - name: Ladybug Evade
+    subtitle: Android Game built in Unreal
+    type:
+      - Unreal
+      - Application
+    link: https://zaphodious.com/wfctext/
+    link-text: Itch.io page
+    description: A mobile game created in Unreal 5, formerly released on the Google Play store (no longer supported, and available now only as a PC download). Solo developer project using entirely custom assets except for music and sound effects. Unreal's default lighting proved too heavy for adaquate mobile performance, so a custom in-material lighting solution was used to give the game a stylized look at a decent framerate.
+    img: icon_256.png
+    img-caption: A screenshot of the game in action
+    img-alt: insert description of what is being displayed
+    technologies: 
+    - Unreal
+    - Blender
+    - Android SDK
+    - Play Store Publishing
   - name: PaperCuts
+    subtitle: Specialized desktop drawing app
     type:
       - Application
       - Tool
@@ -28,6 +46,7 @@ projects:
     - Godot
     - Custom Shaders
   - name: Proompt
+    subtitle: Prompt theme engine for Bash
     type:
       - Utility
       - Tool
@@ -42,6 +61,7 @@ projects:
     - Git CLI
     - Shell Scripting
   - name: Hireling
+    subtitle: Unit tests for service workers
     type:
       - Framework
     github: https://github.com/Zaphodious/hireling
@@ -54,21 +74,8 @@ projects:
     - Clojurescript
     - Service Workers
     - Unit Testing
-  - name: WFCText
-    type:
-      - Javascript Library
-      - Tech Demo
-    github: https://github.com/Zaphodious/wfctext
-    link: https://zaphodious.com/wfctext/
-    link-text: Demo
-    description: Implimentation of the "Wave-Function Collapse" procedural generation algorithem, including the ability to derive tiles from an example, for pure text inputs. The demo page generates an entirely new map on each reload.
-    img: icon_256.png
-    img-caption: The demo page, after generating maps
-    img-alt: insert description of what is being displayed
-    technologies: 
-    - Javascript
-    - Wave-Function Collapse algorithem
   - name: Experimental Text RPG
+    subtitle: Fantasy-hardware text RPG
     type:
       - Website
       - Tech Demo

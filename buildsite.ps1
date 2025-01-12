@@ -1,0 +1,1 @@
+mustache ./raw/data.yaml ./raw/index.html.mustache > index.html

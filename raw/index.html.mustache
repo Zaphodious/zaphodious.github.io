@@ -25,35 +25,36 @@
             <p>{{profile.description}}</p>
             <h3>Education</h3>
             {{#profile.education}}
-                <p>{{level}} in {{major}} from {{from}} in {{year}}. Graduated {{honors}}</p>
+            <p>{{level}} in {{major}} from {{from}} in {{year}}. Graduated {{honors}}</p>
             {{/profile.education}}
         </section>
         <section>
             <h2>Projects</h2>
             <ul>
                 {{#projects}}
-                    <li>
-                        <section>
+                <li>
+                    <section>
                             <h3>{{name}}</h3>
-                            <figure>
-                            <img src="{{img}}" alt="{{img-alt}}" title="{{img-caption}}"/>
+                            <p class="subtitle">{{subtitle}}</p>
+                        <figure>
+                            <img src="{{img}}" alt="{{img-alt}}" title="{{img-caption}}" />
                             <figcaption>{{img-caption}}</figcaption>
-                            </figure>
-                            {{#github}}
-                                <a href="{{github}}">Github</a>
-                            {{/github}}
-                            {{#link}}
-                                <a href="{{link}}">{{link-text}}</a>
-                            {{/link}}
-                            <p>{{description}}</p>
-                            <h4>Technologies Used</h4>
-                            <ul>
+                        </figure>
+                        {{#github}}
+                        <a href="{{github}}">Github</a>
+                        {{/github}}
+                        {{#link}}
+                        <a href="{{link}}">{{link-text}}</a>
+                        {{/link}}
+                        <p class="description">{{description}}</p>
+                        <h4>Technologies Used</h4>
+                        <ul>
                             {{#technologies}}
-                                <li>{{.}}</li>
+                            <li>{{.}}</li>
                             {{/technologies}}
-                            </ul>
-                        </section>
-                    </li>
+                        </ul>
+                    </section>
+                </li>
                 {{/projects}}
             </ul>
         </section>
